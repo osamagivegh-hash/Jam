@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brandGray text-slate-900;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section {
+  @apply py-20;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-brandBlue mb-6 text-center;
+}
+
+.section-sub {
+  @apply text-slate-600 max-w-2xl mx-auto text-center mb-10;
+}

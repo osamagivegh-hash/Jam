@@ -1,0 +1,24 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brandGray text-slate-900;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section {
+  @apply py-20;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-brandBlue mb-6 text-center;
+}
+
+.section-sub {
+  @apply text-slate-600 max-w-2xl mx-auto text-center mb-10;
+}
+
