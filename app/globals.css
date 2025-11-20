@@ -2,11 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* تعريف اللون المخصص داخل @layer حتى يسمح Tailwind باستخدامه في @apply */
+@layer utilities {
+  .bg-brandGray {
+    background-color: theme('colors.brandGray');
+  }
+  .text-brandBlue {
+    color: theme('colors.brandBlue');
+  }
+}
+
+/* *************** body *************** */
 body {
   @apply bg-brandGray text-slate-900;
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* *************** sections *************** */
 .section {
   @apply py-20;
 }
