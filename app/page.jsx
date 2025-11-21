@@ -66,6 +66,18 @@ export default function Home(){
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brandBlue via-blue-700 to-slate-900 text-white py-24">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,_#60a5fa,_transparent_45%),_radial-gradient(circle_at_bottom,_#c7d2fe,_transparent_40%)]" />
+        <div
+          className="pointer-events-none absolute inset-5 rounded-[32px] border border-slate-400/35 shadow-[0_0_0_1px_rgba(148,163,184,0.2)]"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute top-12 right-12 h-14 w-14 rounded-full border border-slate-400/40 shadow-[0_15px_40px_rgba(15,23,42,0.25)]"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute bottom-10 left-12 h-16 w-16 rounded-3xl border border-slate-400/45 rotate-6"
+          aria-hidden
+        />
         <div className="container mx-auto px-4 relative">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
@@ -125,8 +137,12 @@ export default function Home(){
       </section>
 
       {/* Stats Section */}
-      <section className="bg-white py-12 shadow-inner">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-white py-12 shadow-inner overflow-hidden">
+        <div
+          className="pointer-events-none absolute inset-3 rounded-[28px] border border-slate-400/40 shadow-[0_0_0_1px_rgba(148,163,184,0.18)]"
+          aria-hidden
+        />
+        <div className="container mx-auto px-4 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat) => (
               <div key={stat.label} className="rounded-2xl bg-brandGray p-6 text-center border border-slate-200">
@@ -140,12 +156,16 @@ export default function Home(){
       </section>
 
       {/* About */}
-      <section id="about" className="section bg-gradient-to-b from-brandGray to-white">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <section id="about" className="section bg-gradient-to-b from-brandGray to-white relative overflow-hidden">
+        <div
+          className="pointer-events-none absolute inset-x-4 -top-6 h-24 rounded-full border border-slate-400/30 blur-3xl"
+          aria-hidden
+        />
+        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center relative">
           <div className="space-y-6">
             <h2 className="section-title">من نحن</h2>
             <p className="section-sub text-left lg:text-right leading-relaxed">
-              نحن جمعية النور الخيرية، نؤمن بأن لكل إنسان الحق في الماء والتعليم والكرامة. فريقنا يعمل بمعايير دولية معتمدة، ويعتمد على الابتكار في تصميم البرامج التي تصل بأمان وفاعلية إلى المستفيدين.
+              نحن جمعية إنماء الخيرية، نؤمن بأن لكل إنسان الحق في الماء والتعليم والكرامة. فريقنا يعمل بمعايير دولية معتمدة، ويعتمد على الابتكار في تصميم البرامج التي تصل بأمان وفاعلية إلى المستفيدين.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {highlights.map((item) => (
@@ -314,8 +334,12 @@ export default function Home(){
       </section>
 
       {/* Contact */}
-      <section id="contact" className="section bg-gradient-to-br from-brandBlue via-blue-800 to-slate-900 text-white">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <section id="contact" className="section bg-gradient-to-br from-brandBlue via-blue-800 to-slate-900 text-white relative overflow-hidden">
+        <div
+          className="pointer-events-none absolute inset-4 rounded-[34px] border border-slate-400/35 shadow-[0_0_0_1px_rgba(148,163,184,0.2)]"
+          aria-hidden
+        />
+        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center relative">
           <div className="space-y-4">
             <h2 className="text-3xl font-extrabold">تواصل معنا</h2>
             <p className="text-slate-100/90 leading-relaxed">
@@ -323,19 +347,19 @@ export default function Home(){
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3"><Phone className="h-5 w-5 text-brandLight" /><span>+966 555 123 456</span></div>
-              <div className="flex items-center gap-3"><Mail className="h-5 w-5 text-brandLight" /><span>support@noorcharity.org</span></div>
+              <div className="flex items-center gap-3"><Mail className="h-5 w-5 text-brandLight" /><span>support@enmaa.org</span></div>
               <div className="flex items-center gap-3"><MapPin className="h-5 w-5 text-brandLight" /><span>الرياض - المملكة العربية السعودية</span></div>
             </div>
             <div className="flex flex-wrap gap-3">
               <a href="tel:+966555123456" className="inline-flex items-center gap-2 rounded-full bg-white text-brandBlue px-5 py-3 font-semibold shadow-lg">
                 اتصال مباشر
               </a>
-              <a href="mailto:support@noorcharity.org" className="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-3 font-semibold text-white hover:bg-white/10">
+              <a href="mailto:support@enmaa.org" className="inline-flex items-center gap-2 rounded-full border border-white/70 px-5 py-3 font-semibold text-white hover:bg-white/10">
                 أرسل بريدًا
               </a>
             </div>
           </div>
-          <div className="bg-white/5 border border-white/15 rounded-3xl p-8 shadow-2xl backdrop-blur space-y-5">
+          <div className="bg-white/8 border border-slate-300/40 rounded-3xl p-8 shadow-2xl shadow-slate-900/30 backdrop-blur space-y-5">
             <h3 className="text-xl font-bold">مستعد للعطاء؟</h3>
             <p className="text-slate-100/90 text-sm leading-relaxed">
               شارك بياناتك وسيتم التواصل معك خلال 24 ساعة لتحديد أفضل فرصة تبرع تناسب أهدافك.
