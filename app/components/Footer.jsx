@@ -5,7 +5,7 @@ export default function Footer(){
     <footer className="bg-slate-900 text-white py-10">
       <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8 items-start">
         <div className="space-y-3">
-          <h3 className="text-lg font-bold">جمعية النور الخيرية</h3>
+          <h3 className="text-lg font-bold">جمعية إنماء الخيرية</h3>
           <p className="text-sm text-slate-200 leading-relaxed">
             نعمل لنشر الأمل عبر برامج مستدامة في المياه والتعليم والرعاية المجتمعية، مع التزام كامل بالشفافية والحوكمة.
           </p>

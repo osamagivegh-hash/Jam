@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: "جمعية خيرية",
-  description: "منظمة خيرية رسمية",
+  title: "جمعية إنماء | العطاء المستدام",
+  description: "جمعية إنماء الخيرية - برامج تنموية ومستدامة في المياه والتعليم والرعاية المجتمعية.",
 };
 
 export default function RootLayout({children}) {
